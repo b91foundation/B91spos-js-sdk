@@ -1,5 +1,5 @@
-# js-v-min-sdk
-The simple JavaScript library for V Systems
+# js-b91-min-sdk
+The simple JavaScript library for B91 Systems
 
 ## Install
 
@@ -8,13 +8,13 @@ The simple JavaScript library for V Systems
   2. clone this project
 
 ``` bash
-$ git clone https://github.com/virtualeconomy/js-v-min-sdk.git
+$ git clone https://github.com/b91foundation/B91spos-js-min-sdk.git
 ```
 
   3. install packages
 
 ```bash
-  $ cd js-v-min-sdk
+  $ cd js-b91-min-sdk
   $ npm install
 ```
 
@@ -73,7 +73,7 @@ $ git clone https://github.com/virtualeconomy/js-v-min-sdk.git
         console.log(result);
     }
 
-    // Create Transaction Object (send 1 VSYS)
+    // Create Transaction Object (send 1 B91)
     var dataInfo = acc.buildPayment("<recipient address>", 1.0);
     dataInfo["signature"] = acc.getSignature(dataInfo, constants.PAYMENT_TX);
     console.log("Request:");
@@ -91,7 +91,7 @@ $ git clone https://github.com/virtualeconomy/js-v-min-sdk.git
         console.log(result);
     }
 
-    // Create Transaction Object (send 1 VSYS)
+    // Create Transaction Object (send 1 B91)
     var dataInfo = acc.buildLeasing(RECIPIENT_ADDR, 1.0);
     dataInfo["signature"] = acc.getSignature(dataInfo, constants.LEASE_TX);
     console.log("Request:");
