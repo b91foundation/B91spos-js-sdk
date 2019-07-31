@@ -30,7 +30,7 @@
     "lease": "npm run build && node libs/test-lease.js",
     "cancel": "npm run build && node libs/test-cancellease.js",
     "clean": "rm -rf libs",
-    "build": "babel --source-maps -d libs src test",
-    "watch": "babel --watch --source-maps -d libs src test"
+    "build": "babel --source-maps -d libs B91SDK B91Test",
+    "watch": "babel --watch --source-maps -d libs B91SDK B91Test"
   }
 }

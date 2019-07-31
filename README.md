@@ -1,4 +1,4 @@
-# js-b91-min-sdk
+# js-b91-sdk
 The simple JavaScript library for B91 Systems
 
 ## Install
@@ -8,13 +8,13 @@ The simple JavaScript library for B91 Systems
   2. clone this project
 
 ``` bash
-$ git clone https://github.com/b91foundation/B91spos-js-min-sdk.git
+$ git clone https://github.com/b91foundation/B91spos-js-sdk.git
 ```
 
   3. install packages
 
 ```bash
-  $ cd js-b91-min-sdk
+  $ cd B91spos-js-sdk
   $ npm install
 ```
 
