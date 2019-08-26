@@ -18,7 +18,7 @@ $ git clone https://github.com/b91foundation/B91spos-js-sdk.git
   $ npm install
 ```
 
-  4. build project and then you can use JS library for V Systems
+  4. build project and then you can use JS library for B91 Systems
 
 ```bash
   $ npm run build
@@ -32,7 +32,7 @@ $ git clone https://github.com/b91foundation/B91spos-js-sdk.git
     ```javascript
     const Blockchain = require('../libs/blockchain');
     const constants = require("../libs/constants");
-    const nodeAddress = "http://test.v.systems:9922"; // change to your node address
+    const nodeAddress = "https://xtestwallet.b91.com/api"; // change to your node address
     var chain = new Blockchain(constants.TESTNET_BYTE, nodeAddress);
     ```
 
@@ -41,7 +41,7 @@ $ git clone https://github.com/b91foundation/B91spos-js-sdk.git
     ```javascript
     const Blockchain = require('../libs/blockchain');
     const constants = require("../libs/constants");
-    const nodeAddress = "https://wallet.v.systems/api"; // change to your node address
+    const nodeAddress = "https://xwallet.b91.com/api"; // change to your node address
     var chain = new Blockchain(constants.MAINNET_BYTE, nodeAddress);
     ```
     

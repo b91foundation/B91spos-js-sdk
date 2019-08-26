@@ -4,12 +4,12 @@ const Account = require('../libs/account');
 const Blockchain = require('../libs/blockchain');
 var   constants = require("../libs/constants");
 
-const nodeAddress = "https://xwallet.b91.com:444/api/";
+const nodeAddress = "https://xtestwallet.b91.com/api/";
 
 const SEED = "123";
 const ACCOUNT_INDEX = 0;
 
-const RECIPIENT_ADDR = "b9LvpYw5BuW2EmW53VfiAsFsSTJgFqkHGda";
+const RECIPIENT_ADDR = "bLBViKY7dswNw2PfVKWW5ZEjdB736gJ5Cso";
 
 // Create Account
 const acc = new Account(constants.MAINNET_BYTE);
@@ -22,7 +22,7 @@ console.log("privateKey:",acc.privateKey);
 
 async function sendPaymentTx(chain, tx) {
     const result = await chain.sendPaymentTx(tx);
-    //console.log(result);
+    console.log(result);
 }
 
 

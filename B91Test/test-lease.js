@@ -1,15 +1,15 @@
-import "babel-polyfill";
+
 const Account = require('../libs/account');
 const Blockchain = require('../libs/blockchain');
 var constants = require("../libs/constants");
 
 /*======= Change the below before run ==========*/
-const SEED = "<please input your seed phrase>";
+const SEED = "123";
 const ACCOUNT_INDEX = 0;
-const RECIPIENT_ADDR = "AU83FKKzTYCue5ZQPweCzJ68dQE4HtdMv5U";
+const RECIPIENT_ADDR = "bLBViKY7dswNw2PfVKWW5ZEjdB736gJ5Cso";
 /*================ Change end ==================*/
 
-const nodeAddress = "http://test.v.systems:9922";
+const nodeAddress = "https://xtestwallet.b91.com/api/";
 const networkByte = constants.TESTNET_BYTE;
 
 async function sendLeasingTx(chain, tx) {
